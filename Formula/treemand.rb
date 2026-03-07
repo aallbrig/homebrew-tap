@@ -1,23 +1,33 @@
 class Treemand < Formula
   desc "Visualize and interact with any CLI tool's command hierarchy as a tree"
   homepage "https://aallbrig.github.io/treemand"
-  url "https://github.com/aallbrig/treemand/archive/refs/tags/v0.2.0.tar.gz"
   version "0.2.0"
-
-  # Update sha256 after release
-  # sha256 "..." # run: curl -sL <url> | shasum -a 256
-
   license "MIT"
 
-  depends_on "go" => :build
+  on_macos do
+    on_intel do
+      url "https://github.com/aallbrig/treemand/releases/download/v0.2.0/treemand_darwin_amd64.tar.gz"
+      sha256 "f85af248de389ab6e2f60f1970decf66b11c843e9a82428e8846408d1b318d0d"
+    end
+    on_arm do
+      url "https://github.com/aallbrig/treemand/releases/download/v0.2.0/treemand_darwin_arm64.tar.gz"
+      sha256 "62fc31cdefd0891c0c6cb2b1277478ef550d6600516a32dd51d877867802e82f"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/aallbrig/treemand/releases/download/v0.2.0/treemand_linux_amd64.tar.gz"
+      sha256 "f422808c58044445972c726c4cc9efebaa08e30ccfee5086aa9f4d1bf36534c5"
+    end
+    on_arm do
+      url "https://github.com/aallbrig/treemand/releases/download/v0.2.0/treemand_linux_arm64.tar.gz"
+      sha256 "442296d2044c11cd64409a096407651f1835f26a4e178bcd0fdbbfb5431d9653"
+    end
+  end
 
   def install
-    cd "cli/treemand" do
-      system "go", "build",
-        "-ldflags", "-X github.com/aallbrig/treemand/cmd.Version=v#{version}",
-        "-o", bin/"treemand",
-        "."
-    end
+    bin.install "treemand"
   end
 
   test do
