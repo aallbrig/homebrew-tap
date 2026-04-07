@@ -1,21 +1,21 @@
 class Allbctl < Formula
   desc "CLI tool for managing and inspecting your development environment"
   homepage "https://aallbrig.github.io/allbctl"
-  version "0.0.37"
+  version "0.0.38"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.37/allbctl-darwin-amd64.tar.gz"
-      sha256 "32be5ccffe4348f84f43784fa6ce4006c7cd5491feaa0e8ec66959c2793dacab"
+      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.38/allbctl-darwin-amd64.tar.gz"
+      sha256 "7cb4b71741ba6c8baafface18677f16d893112cf1b2986dd6097cc59814bc750"
 
       def install
         bin.install "allbctl_darwin_amd64" => "allbctl"
       end
     end
     on_arm do
-      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.37/allbctl-darwin-arm64.tar.gz"
-      sha256 "66f7671af39f58edc8c1f127a0b37e45f7b1db6aa4c4de9880a338e038ea10ce"
+      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.38/allbctl-darwin-arm64.tar.gz"
+      sha256 "687e5331996da0b901c89a2285847a38e5e5a962528b18e856e80a9dfae34797"
 
       def install
         bin.install "allbctl_darwin_arm64" => "allbctl"
@@ -25,16 +25,16 @@ class Allbctl < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.37/allbctl-linux-amd64.tar.gz"
-      sha256 "05fcd8d8efc544563451388fa755a877262e9ab25ea8a33d4f582e0b30aafc62"
+      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.38/allbctl-linux-amd64.tar.gz"
+      sha256 "8d6783e7318bab66b64617edce7ec4a075be417c2831ff40de0c793ed2dcfcee"
 
       def install
         bin.install "allbctl_linux_amd64" => "allbctl"
       end
     end
     on_arm do
-      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.37/allbctl-linux-arm64.tar.gz"
-      sha256 "ddc9a3f422472a4505398755c3a31039958d469b1291579a75aa0189af548e56"
+      url "https://github.com/aallbrig/allbctl/releases/download/v0.0.38/allbctl-linux-arm64.tar.gz"
+      sha256 "a31340a671541527cf66c183f05c8f8ffc703073a9ab2851a4a88ea498507821"
 
       def install
         bin.install "allbctl_linux_arm64" => "allbctl"
