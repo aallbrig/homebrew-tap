@@ -7,14 +7,14 @@ class Assgen < Formula
   on_macos do
     on_intel do
       url "https://github.com/aallbrig/assgen/releases/download/v0.3.0/assgen-v0.3.0-macos-x64"
-      sha256 "adb9861c0e24df681dd78f3b045e954ce074f15e782579f841d51b982175de84"
+      sha256 "e5070e9a3e7a944080348b3bd35e4a952f89ff51d2d13b7b011911c403fe0fc2"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aallbrig/assgen/releases/download/v0.3.0/assgen-v0.3.0-linux-x64"
-      sha256 "46e357a363e848b50f862d7b3aa6c3b26b99636c758428400e5e3cb3cddcba00"
+      sha256 "50d9ebbf4b648669d5e7c1c71b7901460b3405985bc0a11070db6c3bda25ce3a"
     end
   end
 
