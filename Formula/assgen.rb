@@ -1,20 +1,20 @@
 class Assgen < Formula
   desc "AI-driven game asset generation CLI"
   homepage "https://github.com/aallbrig/assgen"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aallbrig/assgen/releases/download/v0.3.0/assgen-v0.3.0-macos-x64"
-      sha256 "791047cf41d3c985bdcdfca2fa7f3e1f857d401b9c73a7e2ab322f301f04bcb9"
+      url "https://github.com/aallbrig/assgen/releases/download/v0.3.1/assgen-v0.3.1-macos-x64"
+      sha256 "d00974833fd47fe759a54a455c5facb24ac1a6e2fe0895c9de29bfd99522eae2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/aallbrig/assgen/releases/download/v0.3.0/assgen-v0.3.0-linux-x64"
-      sha256 "9a7bc8ad702d3bfafa7ed5e843c3481150abfe5defc262e8dabd4c106b5bf336"
+      url "https://github.com/aallbrig/assgen/releases/download/v0.3.1/assgen-v0.3.1-linux-x64"
+      sha256 "b1d5358164120883e062bd21fa440fa8c9172556080e555a17effe57a63562bd"
     end
   end
 
