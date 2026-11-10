@@ -1,13 +1,13 @@
 class Treemand < Formula
   desc "Visualize and interact with any CLI tool's command hierarchy as a tree"
   homepage "https://aallbrig.github.io/treemand"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aallbrig/treemand/releases/download/v0.5.0/treemand_darwin_amd64.tar.gz"
-      sha256 "00c92b8215a1ad6efa4f81fd585a5e0727ca35d36a6ffa67c86187c2381f190e"
+      url "https://github.com/aallbrig/treemand/releases/download/v0.6.0/treemand_darwin_amd64.tar.gz"
+      sha256 "9d99d00d776eca9b225b450d384081c88990452db8e236b00b72e2c9a2774e7f"
 
       def install
         bin.install "treemand_darwin_amd64" => "treemand"
@@ -15,8 +15,8 @@ class Treemand < Formula
       end
     end
     on_arm do
-      url "https://github.com/aallbrig/treemand/releases/download/v0.5.0/treemand_darwin_arm64.tar.gz"
-      sha256 "6c3658f88a93a528dd8752ae82c2220ad00d061a0245834e894906db10b536e2"
+      url "https://github.com/aallbrig/treemand/releases/download/v0.6.0/treemand_darwin_arm64.tar.gz"
+      sha256 "2fb7018f955f946c68cbb7b31c103ef237f643a5be4149923daa4a16eb2bcc9e"
 
       def install
         bin.install "treemand_darwin_arm64" => "treemand"
@@ -27,8 +27,8 @@ class Treemand < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/aallbrig/treemand/releases/download/v0.5.0/treemand_linux_amd64.tar.gz"
-      sha256 "2b2619ebe61a226f1bec1aa60e345740a67fce1e63860473d97ce101a0873c38"
+      url "https://github.com/aallbrig/treemand/releases/download/v0.6.0/treemand_linux_amd64.tar.gz"
+      sha256 "07717456687970c1a7e0f9a9ba4447019bfe936e08c1d9b8a57e61e46d3fc0ef"
 
       def install
         bin.install "treemand_linux_amd64" => "treemand"
@@ -36,8 +36,8 @@ class Treemand < Formula
       end
     end
     on_arm do
-      url "https://github.com/aallbrig/treemand/releases/download/v0.5.0/treemand_linux_arm64.tar.gz"
-      sha256 "ebc052dc946cca2aa9db6ce994378121aca9cad9a4466562862720f80ced5f01"
+      url "https://github.com/aallbrig/treemand/releases/download/v0.6.0/treemand_linux_arm64.tar.gz"
+      sha256 "f0d962ee13c7cb59a3a7cd68557453d91f9f352cfaa7b86aad42b81fb559d875"
 
       def install
         bin.install "treemand_linux_arm64" => "treemand"
